@@ -8,6 +8,8 @@ console.log('Happy hacking :) ---')
 
 const baseUrl= "https://platzi-avo.vercel.app/"
 
+const appNode = document.querySelector('#app');
+
 //web api
 //conectarnos al server
 window
@@ -39,7 +41,9 @@ window
 
             todosLosItems.push(container);
         });
-        document.body.append( ...todosLosItems);
+        //document.body.append( ...todosLosItems);
+        appNode.append( ...todosLosItems);
+
 })
 
 /* Realizar la consulta con async await
